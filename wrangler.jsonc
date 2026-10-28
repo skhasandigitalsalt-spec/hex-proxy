@@ -1,0 +1,21 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "hex-proxy",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-10-27",
+	"workers_dev": true,
+	"compatibility_flags": [
+		"enable_request_signal"
+	],
+	"vars": {
+		"FIREBASE_PROJECT_ID": "hexo-2803"
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "hex-credit-system",
+			"database_id": "11bbcfe2-bfda-4cc7-9a03-f15a771a5064",
+			"remote": true
+		}
+	]
+}
